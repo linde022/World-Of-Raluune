@@ -1,0 +1,580 @@
+@font-face {
+    font-family: "RocketRinder";
+    src: url(../fonts/Rocket\ Rinder.woff2);
+}
+@font-face {
+    font-family: "Code";
+    src: url(../fonts/CODE\ Bold.woff2);
+}
+@font-face {
+    font-family: "Source";
+    src: url(../fonts/SourceSansPro-Light.woff2);
+}
+html { 
+    background: url('../images/city1.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .overhead {
+        padding: 0;
+        height:10vw;
+        position: relative;
+        left: 0;
+        text-align: center;
+        align-items: center;
+        font-size: 4vw;
+        color: #BAE7E5;
+        background: url('../images/banner.png');
+        margin-left: 150px;
+        margin-right: 150px;
+        border: 3px solid #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "RocketRinder";
+  }
+  .main-content {
+    padding: 30px;
+    height: 50vw;
+    position: relative;
+    left: 0;
+    text-align: left;
+    font-size: 2vw;
+    color: #BAE7E5;
+    background-color: rgba(64, 107, 190, 0.5);;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    font-family: "Source";
+    box-sizing: border-box;
+    padding: 1vw;
+    overflow: scroll;
+}
+  .menu-map{
+        padding: 0px;
+        height: 1.5em;
+        position: relative;
+        left: 0;
+        text-align: center;
+        font-size: 3vw;
+        color: #BAE7E5;
+        background-color: #24A3EF;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Code";
+  }
+  .menu{
+    padding: 0px;
+    height: 1.5em;
+    position: relative;
+    left: 0;
+    text-align: center;
+    font-size: 3vw;
+    color: #BAE7E5;
+    background-color: #24A3EF;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Code";
+  }
+  .submenu{
+    padding: 0px;
+    width: 50%;
+    float: left;
+    left: 0;
+    text-align: center;
+    font-size: 3vw;
+    color: #BAE7E5;
+    font-family: "Code";
+  }
+
+.map-content {
+    margin-top: 100px;
+    margin: 10px;
+    border: 5px transparent;
+    position: relative;
+    display: inline-block;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 10px;
+    background-color: rgba(64, 107, 190, 0.5);
+}
+
+  .map-content img{
+    width: 100%;
+    display: block;
+  }
+  .box {
+    width: 4%;
+    height: 4%;
+    background-image: url(../images/point.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+.box:hover{
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+.box:hover>.pin-text {
+    display: block;
+}
+
+.pin-text {
+    position: absolute;
+    z-index: 99 !important;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 75%;
+    white-space: nowrap;
+    display: none;
+    border-radius: 5px;
+    background-color: #24A3EF;
+    border: 3px solid #24A3EF;
+    font-family: "Code";
+    padding: 2px;
+}
+
+#pin-1 {
+top: 25%;
+left: 55%;
+}
+#pin-2 {
+    top: 27%;
+    left: 49%;
+}
+#pin-3 {
+    top: 32%;
+    left: 72%;
+}
+#pin-4 {
+        top: 56%;
+        left: 53%;
+}
+#pin-5 {
+    top: 48%;
+    left: 87%;
+}
+#pin-6 {
+    top: 23%;
+    left: 32%;
+}
+#pin-7{
+    top: 49%;
+    left: 34%;
+}
+  
+  .header{
+    height: 1.5em;
+    background-color: #406BBE;
+    font-size: 2vw;
+    position: relative;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Code";
+    color: #BAE7E5;
+
+  }
+  .location{
+    position: relative;
+    color: #BAE7E5;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    font-family: "Code";
+    height:51.75vw;
+
+  }
+  .location-content{
+    width: 65%;
+    float: right;
+    font-size: 2vw;
+    height: 48vw;
+    background-color:rgba(64, 107, 190, 0.5);
+    font-family: "Source";
+    box-sizing: border-box;
+    padding: 1vw;
+    overflow: scroll;
+    line-height: 120%;
+    
+  }
+  .location-content-image{
+    width: 30%;
+    height: 20vw;
+    float: left;
+  }
+.square{
+    height: 90%;
+    background-color: #24A3EF;
+    border: 0.3vw solid white;
+}
+/*Neo Eclipse*/
+#image1{
+background: url(../images/Locations/neo-icon.png) no-repeat;
+background-size: cover;
+}
+/*Lost Cities*/
+#image2{
+  background: url(../images/Locations/city-icon.png) no-repeat;
+  background-size: cover;
+  }
+/*Sandblown Ruins*/
+#image3{
+  background: url(../images/Locations/sand-icon.png) no-repeat;
+  background-size: cover;
+  }
+/*Fortitude*/
+#image4{
+  background: url(../images/Locations/fort-icon.png) no-repeat;
+  background-size: cover;
+  }
+/*Wraith Island*/
+#image5{
+  background: url(../images/Locations/wraith-icon.png) no-repeat;
+  background-size: cover;
+  }
+/*Lesser Wastes*/
+#image6{
+  background: url(../images/Locations/lesser-icon.png) no-repeat;
+  background-size: cover;
+  }
+/*Greater Wastes*/
+#image7{
+  background: url(../images/Locations/greater-icon.png) no-repeat;
+  background-size: cover;
+  }
+
+  .list-title{
+    font-size: 1.5vw;
+    margin-top: 1vw;
+
+  }
+  .list-content{
+    width: 100%;
+    float: left;
+    height: 10vw;
+    font-size: 2vw;
+    background-color: #406BBE;
+    font-family: "Source";
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    box-sizing: border-box;
+    padding: 1vw;
+    overflow: scroll;
+
+  }
+  .figure-image{
+    width: 30%;
+    height: 52.5vw;
+    float: left;
+    position: absolute;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+  .figure-image:hover{
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+  }
+  /*Helios*/
+  #fimage1{
+    background: url(../images/Characters/Helios/Helios1.png);
+    background-size: cover;
+  }
+  /*Meyna*/
+  #fimage2{
+    background: url(../images/Characters/Meyna/Meyna1.png);
+    background-size: cover;
+  }
+  /*Overseer*/
+  #fimage3{
+    background: url(../images/Characters/Overseer/Overseer1.png);
+    background-size: cover;
+  }
+  /*Pheonix*/
+  #fimage4{
+    background: url(../images/Characters/Pheonix/Pheonix1.png);
+    background-size: cover;
+  }
+  /*Rhett*/
+  #fimage5{
+    background: url(../images/Characters/Rhett/Rhett1.png);
+    background-size: cover;
+  }
+  /*Sage*/
+  #fimage6{
+    background: url(../images/Characters/Sage/Sage1.png);
+    background-size: cover;
+  }
+  /*Silv*/
+  #fimage7{
+    background: url(../images/Characters/Silv/Silv1.png);
+    background-size: cover;
+  }
+  /*Terron*/
+  #fimage8{
+    background: url(../images/Characters/Terron/Terron1.png);
+    background-size: cover;
+  }
+  /*Ghost*/
+  #fimage9{
+    background: url(../images/Characters/Ghost/Ghost1.png);
+    background-size: cover;
+  }
+  /*Starke*/
+  #fimage10{
+    background: url(../images/Characters/Starke/Starke1.png);
+    background-size: cover;
+  }
+  /*Aphie*/
+  #fimage11{
+    background: url(../images/Characters/Aphie/Aphie1.png);
+    background-size: cover;
+  }
+  /*Arch*/
+  #fimage12{
+    background: url(../images/Characters/Arch/Arch1.png);
+    background-size: cover;
+  }
+  /*Maine*/
+  #fimage13{
+    background: url(../images/Characters/Maine/Maine1.png);
+    background-size: cover;
+  }
+  /*Kaine*/
+  #fimage14{
+    background: url(../images/Characters/Kaine/Kaine1.png);
+    background-size: cover;
+  }
+  /*Lychinus*/
+  #fimage15{
+    background: url(../images/Characters/Lychinus/Lychinus1.png);
+    background-size: cover;
+  }
+  /*Leyna*/
+  #fimage16{
+    background: url(../images/Characters/Leyna/Leyna1.png);
+    background-size: cover;
+  }
+  /*Raine*/
+  #fimage17{
+    background: url(../images/Characters/Raine/Raine1.png);
+    background-size: cover;
+  }
+  /*Sephtis*/
+  #fimage18{
+    background: url(../images/Characters/Sephtis/Sephtis1.png);
+    background-size: cover;
+  }
+  /*Vapor*/
+  #fimage19{
+    background: url(../images/Characters/Vapor/Vapor1.png);
+    background-size: cover;
+  }
+  /*Xilanis*/
+  #fimage20{
+    background: url(../images/Characters/XIlanis/Xilanis1.png);
+    background-size: cover;
+  }
+  /*Calypso*/
+  #fimage21{
+    background: url(../images/Characters/Calypso/Calypso1.png);
+    background-size: cover;
+  }
+  ul{
+    list-style-type: square;
+    margin-left: 2vw;
+    font-size: 2vw;
+    font-family: "Source";
+    
+  }
+  hr{
+    border-color: #BAE7E5;
+  }
+  .credit {
+    text-align: center;
+    font-size: 3vw;
+    color: #BAE7E5;
+    font-family: "Source";
+  }
+  a{
+    color:#F03876;
+  }
+  a:visited {
+    color:#F03876;
+  }
+  .list-content::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .list-content {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .location-content::-webkit-scrollbar {
+    display: none;
+  }
+
+  .location-content {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .main-content::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .main-content {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .main-content::-webkit-scrollbar {
+    display: none;
+  }
+  #popup {
+    width: 90%;
+    background-color: rgba(64, 107, 190, 0.9);
+    color: black;
+    position: absolute;
+    display: none;
+    z-index: 999;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-size: 2vw;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    padding: 10px;
+  }
+  .close{
+    margin-left: 85%;
+    position: fixed;
+    font-size: 5vw;
+  }
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 25vw);
+  justify-content:center;
+  align-content: center;
+  gap: 10px;
+  min-height: 1vw;
+  overflow: hidden;
+}
+.grid .galla img{
+  height: 25vw;
+  width: 25vw;
+  object-fit: cover;
+  object-position: top;
+  
+}
+.grid .galla:hover img{
+  transform: scale(1.10);
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lightbox img{
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+  background-color: black;
+  border: 2px solid white
+}
+.culture-content{
+  padding: 30px;
+    height: 25vw;
+    position: relative;
+    left: 0;
+    text-align: left;
+    font-size: 2vw;
+    color: #BAE7E5;
+    background-color: rgba(64, 107, 190, 0.5);
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    font-family: "Source";
+    box-sizing: border-box;
+    padding: 1vw;
+    overflow: scroll;
+}
+.culture-content::-webkit-scrollbar {
+  display: none;
+}
+
+.culture-content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.caption{
+  color: #BAE7E5;
+  font-size: 1.5vw;
+  background-color:rgba(64, 107, 190, 0.5);
+}
+p{
+  line-height: 120%;
+  margin-bottom: 3%;
+  text-indent: 2%;
+}
